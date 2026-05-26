@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VELRON — Redefine Men's Fashion</title>
+  <meta name="description" content="VELRON — Premium men's fashion brand. Modern luxury essentials for the confident man. Shop T-Shirts, Graphic Tees, and more.">
+  <meta property="og:title" content="VELRON — Redefine Men's Fashion">
+  <meta property="og:description" content="Modern luxury essentials for the confident man.">
+  <meta property="og:image" content="assets/images/4DC547EF-5581-4846-805F-71607DD4D612.jpeg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loading-logo">VELRON</div>
+  <div class="loading-bar-track">
+    <div class="loading-bar-fill"></div>
+  </div>
+</div>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+  <p>Flat 10% Off Your First Order — Use Code: <strong>VELRON10</strong> &nbsp;|&nbsp; Free Shipping on orders above &#8377;999</p>
+</div>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">VELRON</a>
+      <ul class="navbar-nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="shop.html?cat=new">New Arrivals</a></li>
+        <li><a href="shop.html?cat=t-shirts">T-Shirts</a></li>
+        <li><a href="shop.html?cat=shirts">Shirts</a></li>
+        <li><a href="shop.html?cat=jeans">Jeans</a></li>
+        <li><a href="shop.html?cat=accessories">Accessories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button class="navbar-icon-btn search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <a href="cart.html" class="navbar-icon-btn" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-badge" style="display:none">0</span>
+        </a>
+        <a href="login.html" class="navbar-login-btn">Login</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-logo">VELRON</span>
+      <button class="mobile-menu-close" id="mobileMenuClose">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html?cat=new">New Arrivals</a>
+      <a href="shop.html?cat=t-shirts">T-Shirts</a>
+      <a href="shop.html?cat=shirts">Shirts</a>
+      <a href="shop.html?cat=jeans">Jeans</a>
+      <a href="shop.html?cat=accessories">Accessories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="login.html" class="btn btn-outline-white btn-sm">Login</a>
+      <a href="shop.html" class="btn btn-white btn-sm">Shop Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" aria-label="Close search">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" width="28" height="28" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <form class="search-form" onsubmit="return false">
+    <input type="text" class="search-input" placeholder="Search products..." autocomplete="off">
+  </form>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-slider">
+    <div class="hero-slide active">
+      <img class="hero-slide-bg" src="assets/images/82D4E5C3-1EDD-43B3-8CA2-C92C1679E8BB.png" alt="VELRON Speed Mode On Black" loading="eager">
+    </div>
+    <div class="hero-slide">
+      <img class="hero-slide-bg" src="assets/images/661791F6-72DC-4521-86FB-F8A357F9A507.jpeg" alt="VELRON Ferrari Formula 1 Tee" loading="lazy">
+    </div>
+    <div class="hero-slide">
+      <img class="hero-slide-bg" src="assets/images/8C7E5EAD-81B7-4BC6-B781-96B1C743CF7F.png" alt="VELRON Performance Division" loading="lazy">
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="hero-tagline hero-animate-1">New Collection &#8212; Speed. Style. Legacy.</p>
+    <h1 class="hero-title hero-animate-2">REDEFINE<br><em>MEN'S</em><br>FASHION</h1>
+    <p class="hero-subtitle hero-animate-3">Modern luxury essentials for the confident man. Built to make a statement.</p>
+    <div class="hero-buttons hero-animate-4">
+      <a href="shop.html" class="btn btn-white btn-lg">Shop Now</a>
+      <a href="shop.html?cat=new" class="btn btn-outline-white btn-lg">New Arrivals</a>
+    </div>
+  </div>
+
+  <div class="hero-dots">
+    <div class="hero-dot active"></div>
+    <div class="hero-dot"></div>
+    <div class="hero-dot"></div>
+  </div>
+
+  <div class="hero-scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- MARQUEE TICKER -->
+<div class="marquee-container">
+  <div class="marquee-track">
+    <span class="marquee-item">Free Shipping on &#8377;999+</span>
+    <span class="marquee-item">Premium Cotton</span>
+    <span class="marquee-item">Speed. Style. Legacy.</span>
+    <span class="marquee-item">New Collection 2026</span>
+    <span class="marquee-item">Easy Returns &amp; Exchange</span>
+    <span class="marquee-item">Built To Last</span>
+    <span class="marquee-item">Ultra Soft Feel</span>
+    <span class="marquee-item">Regular Fit</span>
+    <span class="marquee-item">Free Shipping on &#8377;999+</span>
+    <span class="marquee-item">Premium Cotton</span>
+    <span class="marquee-item">Speed. Style. Legacy.</span>
+    <span class="marquee-item">New Collection 2026</span>
+    <span class="marquee-item">Easy Returns &amp; Exchange</span>
+    <span class="marquee-item">Built To Last</span>
+    <span class="marquee-item">Ultra Soft Feel</span>
+    <span class="marquee-item">Regular Fit</span>
+  </div>
+</div>
+
+<!-- TRUST BADGES -->
+<section style="background:#fff;padding:32px 0;">
+  <div class="container">
+    <div class="trust-badges">
+      <div class="trust-badge reveal">
+        <div class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 6v2h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div>
+          <div class="trust-badge-title">Free Shipping</div>
+          <div class="trust-badge-desc">On prepaid orders above &#8377;999</div>
+        </div>
+      </div>
+      <div class="trust-badge reveal delay-1">
+        <div class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+        </div>
+        <div>
+          <div class="trust-badge-title">Easy Returns</div>
+          <div class="trust-badge-desc">7-day hassle-free returns</div>
+        </div>
+      </div>
+      <div class="trust-badge reveal delay-2">
+        <div class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="trust-badge-title">Premium Quality</div>
+          <div class="trust-badge-desc">100% premium cotton fabric</div>
+        </div>
+      </div>
+      <div class="trust-badge reveal delay-3">
+        <div class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.5 6.5l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="trust-badge-title">24/7 Support</div>
+          <div class="trust-badge-desc">Always here to help you</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTIONS SECTION -->
+<section class="collections section-padding">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Explore</span>
+      <h2 class="section-title">Shop By Category</h2>
+      <p class="section-subtitle">Discover our curated collections, crafted for the modern man who moves with purpose.</p>
+    </div>
+
+    <div class="collections-grid">
+      <div class="collection-card reveal">
+        <img class="collection-card-img" src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800" alt="T-Shirts" loading="lazy">
+        <div class="collection-card-overlay"></div>
+        <div class="collection-card-content">
+          <div class="collection-card-label">Collection</div>
+          <div class="collection-card-name">Graphic Tees</div>
+          <a href="shop.html?cat=t-shirts" class="collection-card-link">Shop Now <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="collection-card reveal delay-1">
+        <img class="collection-card-img" src="https://images.pexels.com/photos/1192609/pexels-photo-1192609.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shirts" loading="lazy">
+        <div class="collection-card-overlay"></div>
+        <div class="collection-card-content">
+          <div class="collection-card-label">Collection</div>
+          <div class="collection-card-name">Shirts</div>
+          <a href="shop.html?cat=shirts" class="collection-card-link">Shop Now <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="collection-card reveal delay-2">
+        <img class="collection-card-img" src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Jeans" loading="lazy">
+        <div class="collection-card-overlay"></div>
+        <div class="collection-card-content">
+          <div class="collection-card-label">Collection</div>
+          <div class="collection-card-name">Jeans</div>
+          <a href="shop.html?cat=jeans" class="collection-card-link">Shop Now <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="collection-card reveal delay-3">
+        <img class="collection-card-img" src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Polo Shirts" loading="lazy">
+        <div class="collection-card-overlay"></div>
+        <div class="collection-card-content">
+          <div class="collection-card-label">Collection</div>
+          <div class="collection-card-name">Polo Shirts</div>
+          <a href="shop.html?cat=polo" class="collection-card-link">Shop Now <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="collection-card reveal delay-4">
+        <img class="collection-card-img" src="https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Jackets" loading="lazy">
+        <div class="collection-card-overlay"></div>
+        <div class="collection-card-content">
+          <div class="collection-card-label">Collection</div>
+          <div class="collection-card-name">Jackets</div>
+          <a href="shop.html?cat=jackets" class="collection-card-link">Shop Now <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section class="section-padding" style="background:#fff;">
+  <div class="container">
+    <div class="section-header reveal" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div>
+        <span class="section-label">Fresh Drops</span>
+        <h2 class="section-title">New Arrivals</h2>
+      </div>
+      <a href="shop.html" class="btn btn-outline">View All</a>
+    </div>
+    <div class="products-grid new-arrivals-grid"></div>
+  </div>
+</section>
+
+<!-- FEATURED BANNER -->
+<section class="featured-banner">
+  <img class="featured-banner-bg" src="assets/images/8C7E5EAD-81B7-4BC6-B781-96B1C743CF7F.png" alt="Summer 2026 Collection" loading="lazy">
+  <div class="featured-banner-overlay"></div>
+  <div class="featured-banner-content reveal">
+    <p class="featured-banner-label">Exclusive Drop</p>
+    <h2 class="featured-banner-title">SUMMER 2026<br>COLLECTION</h2>
+    <p class="featured-banner-subtitle">Limited edition pieces designed for those who lead, not follow.</p>
+    <a href="shop.html?cat=new" class="btn btn-white btn-lg">Explore Now</a>
+  </div>
+</section>
+
+<!-- BEST SELLERS -->
+<section class="section-padding" style="background:#f0ede8;">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center;">
+      <span class="section-label">Customer Favorites</span>
+      <h2 class="section-title">Best Sellers</h2>
+      <p class="section-subtitle" style="margin:0 auto;">The pieces our community keeps coming back for.</p>
+    </div>
+    <div class="products-grid best-sellers-grid"></div>
+    <div style="text-align:center;margin-top:48px;" class="reveal">
+      <a href="shop.html" class="btn btn-primary btn-lg">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT BRAND -->
+<section class="about-section">
+  <div class="about-image reveal-left">
+    <img src="assets/images/IMG_4627.png" alt="VELRON Brand Story" loading="lazy">
+  </div>
+  <div class="about-content">
+    <span class="section-label">Our Story</span>
+    <h2 class="section-title" style="color:#fff;">BUILT ON SPEED.<br>DRIVEN BY PASSION.</h2>
+    <p class="body-text">VELRON was born from a simple belief &#8212; that men's fashion should be as bold as the men who wear it. We create garments that carry stories: of speed, of legacy, of passion that transcends trends.</p>
+    <p class="body-text" style="margin-top:16px;">Every thread we use, every graphic we design &#8212; it's a statement. Not just a t-shirt. Not just clothing. It's an identity.</p>
+    <a href="about.html" class="btn btn-outline-white" style="margin-top:32px;">Read Our Story</a>
+    <div class="about-stats">
+      <div class="stat-item">
+        <div class="stat-number"><span class="counter" data-target="5000" data-suffix="+">0+</span></div>
+        <div class="stat-label">Happy Customers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span class="counter" data-target="50" data-suffix="+">0+</span></div>
+        <div class="stat-label">Unique Designs</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span class="counter" data-target="100">0</span>%</div>
+        <div class="stat-label">Premium Cotton</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section-padding">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center;">
+      <span class="section-label">Social Proof</span>
+      <h2 class="section-title">What Men Are Saying</h2>
+    </div>
+    <div class="testimonials-slider reveal">
+      <div class="testimonials-track">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"The Speed Mode On tee is an absolute masterpiece. The quality is insane &#8212; soft, durable, and the print is flawless. Gets compliments every time I wear it."</p>
+          <div class="testimonial-author">Arjun Mehta</div>
+          <div class="testimonial-location">Mumbai, India</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"Ordered the Ferrari F1 tee and I can't stop wearing it. The oversized fit is perfect, fabric is ultra-soft. VELRON genuinely delivers on their premium promise."</p>
+          <div class="testimonial-author">Rohan Singh</div>
+          <div class="testimonial-location">Delhi, India</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"The Performance Division tee is exactly what I needed. Clean design, bold statement. I ordered three more colors the same day. VELRON for life."</p>
+          <div class="testimonial-author">Karan Verma</div>
+          <div class="testimonial-location">Bangalore, India</div>
+        </div>
+      </div>
+      <div class="testimonials-controls">
+        <button class="testimonial-nav testimonial-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="testimonial-nav testimonial-next" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="newsletter-inner reveal">
+    <span class="section-label">Stay Connected</span>
+    <h2 class="section-title" style="color:#fff;margin-bottom:12px;">Join The VELRON Club</h2>
+    <p class="newsletter-subtitle">Get early access to new drops, exclusive offers, and style inspiration delivered to your inbox.</p>
+    <form class="newsletter-form" onsubmit="return false">
+      <input type="email" class="newsletter-input" placeholder="Enter your email address">
+      <button type="submit" class="newsletter-btn">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo">VELRON</div>
+        <div class="footer-brand-tagline">Live The Vision</div>
+        <p class="footer-brand-desc">Premium men's fashion built on speed, style, and legacy. Crafted for the confident man who refuses to blend in.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Twitter/X">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.41 19.1C5.12 19.56 12 19.56 12 19.56s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop All</a></li>
+          <li><a href="shop.html?cat=new">New Arrivals</a></li>
+          <li><a href="shop.html?cat=t-shirts">T-Shirts</a></li>
+          <li><a href="shop.html?cat=shirts">Shirts</a></li>
+          <li><a href="about.html">About VELRON</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Customer Care</div>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Returns &amp; Exchange</a></li>
+          <li><a href="#">Shipping Info</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Policies</div>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+        <div class="footer-col-title" style="margin-top:24px;">Contact</div>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@velron.in">hello@velron.in</a></li>
+          <li><a href="tel:+919999999999">+91 99999 99999</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2026 VELRON. All rights reserved. | Live The Vision.</p>
+      <div class="footer-payment">
+        <div class="payment-icon">VISA</div>
+        <div class="payment-icon">MC</div>
+        <div class="payment-icon">UPI</div>
+        <div class="payment-icon">RZP</div>
+        <div class="payment-icon">COD</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/products.js"></script>
+<script src="js/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About VELRON — Premium racing and speed-themed men's fashion. Built for the ones who dare.">
+  <title>About — VELRON</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>Flat 10% Off — Use Code: <strong>VELRON10</strong> | Free Shipping on orders above &#8377;999</p>
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">VELRON</a>
+        <ul class="navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop.html?cat=new">New Arrivals</a></li>
+          <li><a href="shop.html?cat=t-shirts">T-Shirts</a></li>
+          <li><a href="shop.html?cat=shirts">Shirts</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="navbar-actions">
+          <button class="navbar-icon-btn search-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="m21 21-4.35-4.35"/>
+            </svg>
+          </button>
+          <a href="cart.html" class="navbar-icon-btn" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span class="cart-badge" style="display:none">0</span>
+          </a>
+          <a href="login.html" class="navbar-login-btn">Login</a>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-logo">VELRON</span>
+        <button class="mobile-menu-close" id="mobileMenuClose">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="shop.html?cat=new">New Arrivals</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a href="login.html" class="btn btn-outline-white btn-sm">Login</a>
+        <a href="shop.html" class="btn btn-white btn-sm">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <button class="search-close" aria-label="Close search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" stroke-linecap="round">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <form class="search-form" onsubmit="return false">
+      <input type="text" class="search-input" placeholder="Search products..." autocomplete="off">
+    </form>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="about-hero" style="background-image: url('https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=1200');">
+    <div class="about-hero-overlay"></div>
+    <div class="about-hero-content">
+      <span class="about-hero-label">Our Story</span>
+      <h1 class="about-hero-title">LIVE THE VISION</h1>
+      <p class="about-hero-subtitle">We don't make clothes. We make statements.</p>
+    </div>
+  </section>
+
+  <!-- Brand Story Section -->
+  <section class="about-story section">
+    <div class="container">
+      <div class="about-story-grid">
+
+        <!-- Text Left -->
+        <div class="about-story-text">
+          <h2 class="about-story-heading">BUILT FOR THE ONES WHO DARE.</h2>
+          <p class="about-story-p">
+            VELRON was founded in 2026 with a singular obsession — to create clothing that moves as fast as the people who wear it. Born from the intersection of racing culture and premium streetwear, every piece we craft is a tribute to the spirit of speed, precision, and bold self-expression.
+          </p>
+          <p class="about-story-p">
+            Our premium cotton tees are designed for men aged 18 to 35 who refuse to live life in neutral. Each graphic, each stitch, each label carries the weight of a lifestyle — one defined not by rules, but by relentless momentum. We source only the finest 100% cotton fabrics, ensuring every VELRON piece feels as powerful as it looks.
+          </p>
+          <p class="about-story-p">
+            Whether you're on the track, on the streets, or simply setting the pace wherever you go — VELRON is your second skin. We don't follow trends. We set them. Join the movement, and live the vision.
+          </p>
+          <a href="shop.html" class="btn btn-primary about-story-cta">Shop The Collection</a>
+        </div>
+
+        <!-- Image Right -->
+        <div class="about-story-image">
+          <img
+            src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="VELRON — Built for the ones who dare"
+            class="about-story-img"
+            loading="lazy"
+          >
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="about-values-section section section--light">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-label">What We Stand For</span>
+        <h2 class="section-title">OUR VALUES</h2>
+      </div>
+      <div class="about-values">
+
+        <!-- Value Card 1: Premium Quality -->
+        <div class="value-card">
+          <div class="value-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="value-card-title">Premium Quality</h3>
+          <p class="value-card-desc">We refuse to compromise. Every VELRON piece is crafted from 100% premium cotton, rigorously quality-checked to ensure it meets the standard you deserve.</p>
+        </div>
+
+        <!-- Value Card 2: Speed Culture -->
+        <div class="value-card">
+          <div class="value-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" aria-hidden="true">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <h3 class="value-card-title">Speed Culture</h3>
+          <p class="value-card-desc">Inspired by racing, rooted in the streets. Our designs capture the relentless energy of speed culture — bold graphics, sharp lines, and an attitude that never slows down.</p>
+        </div>
+
+        <!-- Value Card 3: Built to Last -->
+        <div class="value-card">
+          <div class="value-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" aria-hidden="true">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+          </div>
+          <h3 class="value-card-title">Built to Last</h3>
+          <p class="value-card-desc">Fast fashion is not our game. VELRON pieces are built to endure — wash after wash, year after year. When you invest in VELRON, you invest in a garment that keeps up with your life.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="about-stats section">
+    <div class="about-stats-inner">
+      <div class="container">
+        <div class="about-stats-grid">
+
+          <div class="about-stat">
+            <div class="about-stat-value">5000+</div>
+            <div class="about-stat-label">Happy Customers</div>
+          </div>
+
+          <div class="about-stat">
+            <div class="about-stat-value">50+</div>
+            <div class="about-stat-label">Designs</div>
+          </div>
+
+          <div class="about-stat">
+            <div class="about-stat-value">100%</div>
+            <div class="about-stat-label">Cotton</div>
+          </div>
+
+          <div class="about-stat">
+            <div class="about-stat-value">EST. 2026</div>
+            <div class="about-stat-label">Year Founded</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter section">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-content">
+          <span class="newsletter-label">Stay Connected</span>
+          <h2 class="newsletter-title">JOIN THE VELRON CLUB</h2>
+          <p class="newsletter-desc">Get early access to new drops, exclusive deals, and speed-culture content delivered straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" onsubmit="return false" novalidate>
+          <div class="newsletter-input-group">
+            <input
+              type="email"
+              class="newsletter-input"
+              placeholder="Enter your email address"
+              autocomplete="email"
+              aria-label="Email address"
+              required
+            >
+            <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
+          </div>
+          <p class="newsletter-note">No spam. Unsubscribe anytime. We respect your privacy.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">VELRON</div>
+          <div class="footer-brand-tagline">Live The Vision</div>
+          <p class="footer-brand-desc">Premium men's fashion built on speed, style, and legacy.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop All</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Customer Care</div>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Policies</div>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 VELRON. All rights reserved.</p>
+        <div class="footer-payment">
+          <div class="payment-icon">VISA</div>
+          <div class="payment-icon">UPI</div>
+          <div class="payment-icon">COD</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/form-validation.js"></script>
+
+</body>
+</html>

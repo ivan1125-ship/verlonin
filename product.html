@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop VELRON premium men's racing-inspired t-shirts. Superior quality cotton, bold designs. Live The Vision." />
+  <meta name="keywords" content="VELRON, men's t-shirt, racing t-shirt, premium fashion, buy online" />
+  <meta name="author" content="VELRON" />
+  <meta property="og:title" content="Product — VELRON | Premium Men's Fashion" />
+  <meta property="og:description" content="Premium men's racing-inspired t-shirts by VELRON. Live The Vision." />
+  <meta property="og:type" content="product" />
+  <title>Product — VELRON | Premium Men's Fashion</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="announcement-bar-inner">
+      <span class="announcement-text">Flat 10% Off Your First Order &mdash; Use Code: <strong>VELRON10</strong></span>
+      <button class="announcement-close" id="announcementClose" aria-label="Close announcement">&#10005;</button>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar">
+      <div class="nav-container">
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">
+          <span class="logo-text">VELRON</span>
+        </a>
+
+        <!-- Main Nav Links -->
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item nav-item--has-dropdown">
+            <a href="shop.html" class="nav-link nav-link--active">Shop</a>
+            <ul class="nav-dropdown">
+              <li><a href="shop.html" class="nav-dropdown-link">All Products</a></li>
+              <li><a href="shop.html?cat=tshirts" class="nav-dropdown-link">T-Shirts</a></li>
+              <li><a href="shop.html?cat=shirts" class="nav-dropdown-link">Shirts</a></li>
+              <li><a href="shop.html?cat=jeans" class="nav-dropdown-link">Jeans</a></li>
+              <li><a href="shop.html?cat=polo" class="nav-dropdown-link">Polo</a></li>
+              <li><a href="shop.html?cat=jackets" class="nav-dropdown-link">Jackets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="collections.html" class="nav-link">Collections</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Nav Actions -->
+        <div class="nav-actions">
+          <button class="nav-action-btn search-toggle" id="searchToggle" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <a href="cart.html" class="nav-action-btn cart-btn" aria-label="Shopping cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 01-8 0"></path>
+            </svg>
+            <span class="cart-badge" id="cartBadge">0</span>
+          </a>
+          <a href="login.html" class="nav-action-btn login-btn" aria-label="Login">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span class="login-label">Login</span>
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-logo">VELRON</span>
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&#10005;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-nav-item--has-sub">
+          <a href="shop.html" class="mobile-nav-link mobile-nav-link--active">Shop</a>
+          <ul class="mobile-nav-sub">
+            <li><a href="shop.html" class="mobile-nav-sub-link">All Products</a></li>
+            <li><a href="shop.html?cat=tshirts" class="mobile-nav-sub-link">T-Shirts</a></li>
+            <li><a href="shop.html?cat=shirts" class="mobile-nav-sub-link">Shirts</a></li>
+            <li><a href="shop.html?cat=jeans" class="mobile-nav-sub-link">Jeans</a></li>
+            <li><a href="shop.html?cat=polo" class="mobile-nav-sub-link">Polo</a></li>
+            <li><a href="shop.html?cat=jackets" class="mobile-nav-sub-link">Jackets</a></li>
+          </ul>
+        </li>
+        <li><a href="collections.html" class="mobile-nav-link">Collections</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="login.html" class="btn btn-outline btn-full">Login</a>
+        <a href="signup.html" class="btn btn-primary btn-full">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-overlay-inner">
+      <button class="search-overlay-close" id="searchOverlayClose" aria-label="Close search">&#10005;</button>
+      <form class="search-form" id="searchForm" action="shop.html" method="GET">
+        <input
+          type="search"
+          name="q"
+          class="search-input"
+          id="searchInput"
+          placeholder="Search for products…"
+          autocomplete="off"
+          aria-label="Search products"
+        />
+        <button type="submit" class="search-submit" aria-label="Submit search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+      <p class="search-hint">Popular: T-Shirts, Racing, Oversized, Black</p>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero page-hero--product">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <h1 class="page-hero-title">Product</h1>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="breadcrumb-link">Home</a>
+          </li>
+          <li class="breadcrumb-separator" aria-hidden="true">&#47;</li>
+          <li class="breadcrumb-item">
+            <a href="shop.html" class="breadcrumb-link">Shop</a>
+          </li>
+          <li class="breadcrumb-separator" aria-hidden="true">&#47;</li>
+          <li class="breadcrumb-item breadcrumb-item--active" aria-current="page" id="breadcrumbProductName">Product</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="product-section">
+    <div class="container">
+
+      <!-- Product Layout -->
+      <div class="product-layout">
+
+        <!-- LEFT: Product Gallery -->
+        <div class="product-gallery">
+          <div class="product-gallery-inner">
+
+            <!-- Thumbnails Column -->
+            <div class="product-thumbnails-col">
+              <div class="product-thumb product-thumb--active" data-index="0">
+                <img
+                  src="assets/images/product-thumb-1.jpg"
+                  alt="Product thumbnail 1"
+                  width="80"
+                  height="96"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-thumb" data-index="1">
+                <img
+                  src="assets/images/product-thumb-2.jpg"
+                  alt="Product thumbnail 2"
+                  width="80"
+                  height="96"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Main Image Column -->
+            <div class="product-main-col">
+              <div class="product-main-image" id="productMainImage">
+                <img
+                  src="assets/images/product-main.jpg"
+                  alt="VELRON Premium Racing T-Shirt — main view"
+                  class="product-main-img"
+                  id="productMainImg"
+                  width="600"
+                  height="720"
+                />
+                <!-- Zoom hint -->
+                <div class="product-zoom-hint" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Zoom</span>
+                </div>
+                <!-- Product badge -->
+                <span class="product-badge product-badge--new">New</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /product-gallery -->
+
+        <!-- RIGHT: Product Info -->
+        <div class="product-info" id="productInfo">
+
+          <!-- Category -->
+          <div class="product-info-category">
+            <a href="shop.html?cat=tshirts" class="product-category-link">T-Shirts</a>
+          </div>
+
+          <!-- Name -->
+          <h1 class="product-info-name" id="productName">VELRON Apex Racing T-Shirt</h1>
+
+          <!-- Rating -->
+          <div class="product-info-rating">
+            <div class="rating-stars" aria-label="Rated 4.8 out of 5">
+              <!-- Star 1 -->
+              <svg class="star star--full" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <!-- Star 2 -->
+              <svg class="star star--full" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <!-- Star 3 -->
+              <svg class="star star--full" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <!-- Star 4 -->
+              <svg class="star star--full" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <!-- Star 5 (partial) -->
+              <svg class="star star--partial" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <defs>
+                  <linearGradient id="starGrad80">
+                    <stop offset="80%" stop-color="currentColor"/>
+                    <stop offset="80%" stop-color="transparent"/>
+                  </linearGradient>
+                </defs>
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#starGrad80)" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <a href="#reviews" class="rating-count">(124 reviews)</a>
+          </div>
+
+          <!-- Price -->
+          <div class="product-info-price">
+            <span class="product-price-current">&#8377;1,299</span>
+            <span class="product-price-original">&#8377;1,799</span>
+            <span class="product-price-discount">28% Off</span>
+          </div>
+
+          <!-- Size Selector -->
+          <div class="product-option-group" id="sizeOptionGroup">
+            <div class="product-option-header">
+              <label class="product-option-label">Size: <strong id="selectedSize">M</strong></label>
+              <a href="size-guide.html" class="product-size-guide-link" target="_blank">Size Guide</a>
+            </div>
+            <div class="product-sizes" role="group" aria-label="Select a size">
+              <button class="product-size-btn" data-size="XS" aria-label="Size XS">XS</button>
+              <button class="product-size-btn" data-size="S" aria-label="Size S">S</button>
+              <button class="product-size-btn product-size-btn--active" data-size="M" aria-label="Size M" aria-pressed="true">M</button>
+              <button class="product-size-btn" data-size="L" aria-label="Size L">L</button>
+              <button class="product-size-btn" data-size="XL" aria-label="Size XL">XL</button>
+              <button class="product-size-btn product-size-btn--soldout" data-size="XXL" aria-label="Size XXL — sold out" aria-disabled="true" disabled>XXL</button>
+            </div>
+          </div>
+
+          <!-- Color Selector -->
+          <div class="product-option-group" id="colorOptionGroup">
+            <div class="product-option-header">
+              <label class="product-option-label">Color: <strong id="selectedColor">Black</strong></label>
+            </div>
+            <div class="product-colors" role="group" aria-label="Select a color">
+              <button
+                class="product-color-btn product-color-btn--active"
+                data-color="black"
+                data-color-name="Black"
+                style="background:#111111;"
+                aria-label="Black"
+                aria-pressed="true"
+                title="Black"
+              ></button>
+              <button
+                class="product-color-btn"
+                data-color="white"
+                data-color-name="White"
+                style="background:#ffffff; border: 2px solid #ddd;"
+                aria-label="White"
+                aria-pressed="false"
+                title="White"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Quantity -->
+          <div class="product-quantity">
+            <label class="product-option-label" for="qtyValue">Quantity</label>
+            <div class="qty-controls">
+              <button class="qty-btn minus" id="qtyMinus" aria-label="Decrease quantity">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+              <input
+                type="number"
+                class="qty-value"
+                id="qtyValue"
+                name="quantity"
+                value="1"
+                min="1"
+                max="10"
+                aria-label="Quantity"
+                readonly
+              />
+              <button class="qty-btn plus" id="qtyPlus" aria-label="Increase quantity">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="product-cta">
+            <button class="btn btn-primary btn-full product-add-to-cart" id="addToCartBtn" aria-label="Add to cart">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 01-8 0"></path>
+              </svg>
+              <span>Add to Cart</span>
+            </button>
+            <button class="btn btn-outline btn-full product-buy-now" id="buyNowBtn" aria-label="Buy now">
+              Buy Now
+            </button>
+            <button class="product-wishlist-btn" id="wishlistBtn" aria-label="Add to wishlist" aria-pressed="false">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Product Features -->
+          <ul class="product-features" aria-label="Product features">
+            <li class="product-feature-item">
+              <svg class="feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Premium Cotton</span>
+            </li>
+            <li class="product-feature-item">
+              <svg class="feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Regular Fit</span>
+            </li>
+            <li class="product-feature-item">
+              <svg class="feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Ultra Soft</span>
+            </li>
+            <li class="product-feature-item">
+              <svg class="feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Free Returns</span>
+            </li>
+          </ul>
+
+          <!-- Product Accordion -->
+          <div class="product-accordion" id="productAccordion">
+
+            <!-- Accordion Item 1: Product Details -->
+            <div class="accordion-item" id="accordionDetails">
+              <button
+                class="accordion-header"
+                aria-expanded="true"
+                aria-controls="accordionDetailsBody"
+                id="accordionDetailsBtn"
+              >
+                <span>Product Details</span>
+                <svg class="accordion-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div
+                class="accordion-body"
+                id="accordionDetailsBody"
+                role="region"
+                aria-labelledby="accordionDetailsBtn"
+              >
+                <ul class="accordion-detail-list">
+                  <li>Fabric: 100% Combed Ring-Spun Cotton, 200 GSM</li>
+                  <li>Neckline: Crew neck with ribbed collar</li>
+                  <li>Sleeve: Short sleeve, regular length</li>
+                  <li>Fit: Regular fit — true to size</li>
+                  <li>Wash Care: Machine wash cold, inside out</li>
+                  <li>Country of Origin: India</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2: Size & Fit -->
+            <div class="accordion-item" id="accordionSizeFit">
+              <button
+                class="accordion-header"
+                aria-expanded="false"
+                aria-controls="accordionSizeFitBody"
+                id="accordionSizeFitBtn"
+              >
+                <span>Size &amp; Fit</span>
+                <svg class="accordion-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div
+                class="accordion-body accordion-body--collapsed"
+                id="accordionSizeFitBody"
+                role="region"
+                aria-labelledby="accordionSizeFitBtn"
+                hidden
+              >
+                <table class="size-fit-table">
+                  <thead>
+                    <tr>
+                      <th>Size</th>
+                      <th>Chest (in)</th>
+                      <th>Length (in)</th>
+                      <th>Shoulder (in)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>XS</td><td>34–36</td><td>26</td><td>16</td></tr>
+                    <tr><td>S</td><td>36–38</td><td>27</td><td>17</td></tr>
+                    <tr><td>M</td><td>38–40</td><td>28</td><td>18</td></tr>
+                    <tr><td>L</td><td>40–42</td><td>29</td><td>19</td></tr>
+                    <tr><td>XL</td><td>42–44</td><td>30</td><td>20</td></tr>
+                    <tr><td>XXL</td><td>44–46</td><td>31</td><td>21</td></tr>
+                  </tbody>
+                </table>
+                <p class="size-fit-note">Model is 6'1" and wears size M. Measurements are approximate.</p>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3: Shipping & Returns -->
+            <div class="accordion-item" id="accordionShipping">
+              <button
+                class="accordion-header"
+                aria-expanded="false"
+                aria-controls="accordionShippingBody"
+                id="accordionShippingBtn"
+              >
+                <span>Shipping &amp; Returns</span>
+                <svg class="accordion-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div
+                class="accordion-body accordion-body--collapsed"
+                id="accordionShippingBody"
+                role="region"
+                aria-labelledby="accordionShippingBtn"
+                hidden
+              >
+                <ul class="accordion-detail-list">
+                  <li>
+                    <strong>Standard Shipping:</strong> 3–5 business days &mdash; Free on orders over &#8377;999
+                  </li>
+                  <li>
+                    <strong>Express Shipping:</strong> 1–2 business days &mdash; &#8377;149
+                  </li>
+                  <li>
+                    <strong>Same Day Delivery:</strong> Available in select cities
+                  </li>
+                  <li>
+                    <strong>Returns:</strong> Easy 7-day returns &mdash; no questions asked
+                  </li>
+                  <li>
+                    <strong>Exchange:</strong> Free size exchange within 15 days
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <!-- /product-accordion -->
+
+        </div>
+        <!-- /product-info -->
+
+      </div>
+      <!-- /product-layout -->
+
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+
+      <div class="reviews-section-header">
+        <h2 class="reviews-section-title">Customer Reviews</h2>
+      </div>
+
+      <!-- Reviews Summary -->
+      <div class="reviews-summary">
+
+        <!-- Left: Average Score -->
+        <div class="reviews-summary-left">
+          <div class="reviews-average-score" aria-label="Average rating 4.8 out of 5">4.8</div>
+          <div class="reviews-average-stars" aria-hidden="true">
+            <svg class="star star--full" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <svg class="star star--full" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <svg class="star star--full" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <svg class="star star--full" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <svg class="star star--partial" width="20" height="20" viewBox="0 0 24 24">
+              <defs>
+                <linearGradient id="starGradSummary">
+                  <stop offset="80%" stop-color="currentColor"/>
+                  <stop offset="80%" stop-color="transparent"/>
+                </linearGradient>
+              </defs>
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#starGradSummary)" stroke="currentColor" stroke-width="1"/>
+            </svg>
+          </div>
+          <p class="reviews-total-count">(124 reviews)</p>
+        </div>
+
+        <!-- Right: Rating Bars -->
+        <div class="reviews-summary-right">
+
+          <div class="rating-bar-row" aria-label="5 stars: 78%">
+            <span class="rating-bar-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              5
+            </span>
+            <div class="rating-bar-track">
+              <div class="rating-bar-fill" style="width: 78%;" role="presentation"></div>
+            </div>
+            <span class="rating-bar-percent">78%</span>
+          </div>
+
+          <div class="rating-bar-row" aria-label="4 stars: 12%">
+            <span class="rating-bar-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              4
+            </span>
+            <div class="rating-bar-track">
+              <div class="rating-bar-fill" style="width: 12%;" role="presentation"></div>
+            </div>
+            <span class="rating-bar-percent">12%</span>
+          </div>
+
+          <div class="rating-bar-row" aria-label="3 stars: 5%">
+            <span class="rating-bar-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              3
+            </span>
+            <div class="rating-bar-track">
+              <div class="rating-bar-fill" style="width: 5%;" role="presentation"></div>
+            </div>
+            <span class="rating-bar-percent">5%</span>
+          </div>
+
+          <div class="rating-bar-row" aria-label="2 stars: 3%">
+            <span class="rating-bar-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              2
+            </span>
+            <div class="rating-bar-track">
+              <div class="rating-bar-fill" style="width: 3%;" role="presentation"></div>
+            </div>
+            <span class="rating-bar-percent">3%</span>
+          </div>
+
+          <div class="rating-bar-row" aria-label="1 star: 2%">
+            <span class="rating-bar-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              1
+            </span>
+            <div class="rating-bar-track">
+              <div class="rating-bar-fill" style="width: 2%;" role="presentation"></div>
+            </div>
+            <span class="rating-bar-percent">2%</span>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /reviews-summary -->
+
+      <!-- Review Cards -->
+      <div class="reviews-list" id="reviewsList">
+
+        <!-- Review Card 1 -->
+        <article class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar" aria-hidden="true">
+              <span class="review-avatar-initial">A</span>
+            </div>
+            <div class="review-meta">
+              <span class="review-author">Arjun Mehta</span>
+              <span class="review-date">
+                <time datetime="2026-04-15">April 15, 2026</time>
+              </span>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+          </div>
+          <h3 class="review-title">Absolutely love the quality!</h3>
+          <p class="review-text">The fabric is incredibly soft and the fit is perfect. I bought the black in size M and it fits exactly as described. The racing graphic looks even better in person. Ordered twice already — will definitely be back for more.</p>
+          <div class="review-card-footer">
+            <span class="review-verified">Verified Purchase</span>
+            <button class="review-helpful-btn" aria-label="Mark as helpful">Helpful (14)</button>
+          </div>
+        </article>
+
+        <!-- Review Card 2 -->
+        <article class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar" aria-hidden="true">
+              <span class="review-avatar-initial">R</span>
+            </div>
+            <div class="review-meta">
+              <span class="review-author">Rahul Singh</span>
+              <span class="review-date">
+                <time datetime="2026-03-28">March 28, 2026</time>
+              </span>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+          </div>
+          <h3 class="review-title">Premium feel, great design</h3>
+          <p class="review-text">Got this as a gift and I'm blown away. The material is thick without being heavy, perfect for year-round wear. Sizing is accurate — went with L as my usual and it's spot on. VELRON is now my go-to brand.</p>
+          <div class="review-card-footer">
+            <span class="review-verified">Verified Purchase</span>
+            <button class="review-helpful-btn" aria-label="Mark as helpful">Helpful (9)</button>
+          </div>
+        </article>
+
+        <!-- Review Card 3 -->
+        <article class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar" aria-hidden="true">
+              <span class="review-avatar-initial">K</span>
+            </div>
+            <div class="review-meta">
+              <span class="review-author">Kartik Nair</span>
+              <span class="review-date">
+                <time datetime="2026-03-10">March 10, 2026</time>
+              </span>
+            </div>
+            <div class="review-stars" aria-label="4 out of 5 stars">
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star star--empty" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+          </div>
+          <h3 class="review-title">Great tee, wish there were more colours</h3>
+          <p class="review-text">Quality is fantastic — worth every rupee. The graphic is sharp and hasn't faded after multiple washes. Only reason I'm giving 4 stars is I'd love to see more colour options. Looking forward to future collections from VELRON.</p>
+          <div class="review-card-footer">
+            <span class="review-verified">Verified Purchase</span>
+            <button class="review-helpful-btn" aria-label="Mark as helpful">Helpful (6)</button>
+          </div>
+        </article>
+
+      </div>
+      <!-- /reviews-list -->
+
+      <!-- Write a Review -->
+      <div class="reviews-cta">
+        <button class="btn btn-outline write-review-btn" id="writeReviewBtn" aria-haspopup="dialog">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path>
+            <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+          </svg>
+          Write a Review
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Related Products Section -->
+  <section class="related-products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">You May Also Like</h2>
+        <a href="shop.html" class="section-link">View All</a>
+      </div>
+      <!-- Related products grid populated by products.js -->
+      <div class="products-grid" id="relatedProductsGrid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+
+          <!-- Brand Column -->
+          <div class="footer-col footer-col--brand">
+            <a href="index.html" class="footer-logo">VELRON</a>
+            <p class="footer-tagline">Live The Vision</p>
+            <p class="footer-brand-desc">Premium men's fashion inspired by the speed of racing. Crafted for those who move fast and look sharp.</p>
+            <div class="footer-social">
+              <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-col footer-col--links">
+            <h3 class="footer-col-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="shop.html" class="footer-link">Shop All</a></li>
+              <li><a href="shop.html?cat=tshirts" class="footer-link">T-Shirts</a></li>
+              <li><a href="shop.html?cat=shirts" class="footer-link">Shirts</a></li>
+              <li><a href="shop.html?cat=jeans" class="footer-link">Jeans</a></li>
+              <li><a href="shop.html?cat=polo" class="footer-link">Polo</a></li>
+              <li><a href="shop.html?cat=jackets" class="footer-link">Jackets</a></li>
+              <li><a href="collections.html" class="footer-link">Collections</a></li>
+            </ul>
+          </div>
+
+          <!-- Help & Support -->
+          <div class="footer-col footer-col--support">
+            <h3 class="footer-col-title">Help &amp; Support</h3>
+            <ul class="footer-links">
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+              <li><a href="faq.html" class="footer-link">FAQs</a></li>
+              <li><a href="shipping.html" class="footer-link">Shipping Policy</a></li>
+              <li><a href="returns.html" class="footer-link">Returns &amp; Exchange</a></li>
+              <li><a href="size-guide.html" class="footer-link">Size Guide</a></li>
+              <li><a href="track-order.html" class="footer-link">Track Order</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="footer-col footer-col--newsletter">
+            <h3 class="footer-col-title">Stay in the Race</h3>
+            <p class="footer-newsletter-desc">Subscribe for exclusive drops, early access and style updates.</p>
+            <form class="footer-newsletter-form" id="footerNewsletterForm" novalidate>
+              <div class="newsletter-input-group">
+                <input
+                  type="email"
+                  class="newsletter-input"
+                  id="footerEmailInput"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                  aria-label="Email address for newsletter"
+                />
+                <button type="submit" class="newsletter-submit" aria-label="Subscribe">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <p class="newsletter-success" id="footerNewsletterSuccess" hidden>You're on the list!</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copyright">&copy; 2026 VELRON. All rights reserved.</p>
+          <ul class="footer-legal-links">
+            <li><a href="privacy.html" class="footer-legal-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-legal-link">Terms of Service</a></li>
+            <li><a href="cookies.html" class="footer-legal-link">Cookie Policy</a></li>
+          </ul>
+          <div class="footer-payment-icons">
+            <span class="payment-icon" title="Visa">VISA</span>
+            <span class="payment-icon" title="Mastercard">MC</span>
+            <span class="payment-icon" title="UPI">UPI</span>
+            <span class="payment-icon" title="PayPal">PayPal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/form-validation.js"></script>
+
+</body>
+</html>

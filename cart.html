@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your Cart — VELRON. Review your selected items and proceed to checkout.">
+  <title>Cart — VELRON</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>Flat 10% Off — Use Code: <strong>VELRON10</strong> | Free Shipping on orders above &#8377;999</p>
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">VELRON</a>
+        <ul class="navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop.html?cat=new">New Arrivals</a></li>
+          <li><a href="shop.html?cat=t-shirts">T-Shirts</a></li>
+          <li><a href="shop.html?cat=shirts">Shirts</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="navbar-actions">
+          <button class="navbar-icon-btn search-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="m21 21-4.35-4.35"/>
+            </svg>
+          </button>
+          <a href="cart.html" class="navbar-icon-btn" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span class="cart-badge" style="display:none">0</span>
+          </a>
+          <a href="login.html" class="navbar-login-btn">Login</a>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-logo">VELRON</span>
+        <button class="mobile-menu-close" id="mobileMenuClose">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="shop.html?cat=new">New Arrivals</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a href="login.html" class="btn btn-outline-white btn-sm">Login</a>
+        <a href="shop.html" class="btn btn-white btn-sm">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <button class="search-close" aria-label="Close search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" stroke-linecap="round">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <form class="search-form" onsubmit="return false">
+      <input type="text" class="search-input" placeholder="Search products..." autocomplete="off">
+    </form>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero page-hero--dark">
+    <div class="container">
+      <h1 class="page-hero-title">YOUR CART</h1>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-separator" aria-hidden="true">/</li>
+          <li class="breadcrumb-item breadcrumb-item--active" aria-current="page">Cart</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Cart Page -->
+  <main class="cart-page">
+    <div class="container">
+      <div class="cart-layout">
+
+        <!-- Left: Cart Content -->
+        <div class="cart-content">
+
+          <!-- Empty Cart State (hidden by default) -->
+          <div class="cart-empty" style="display:none">
+            <div class="cart-empty-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="64" height="64">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 0 1-8 0"/>
+              </svg>
+            </div>
+            <h2 class="cart-empty-title">Your cart is empty</h2>
+            <p class="cart-empty-text">Discover our latest collection and add something you love.</p>
+            <a href="shop.html" class="btn btn-primary">Browse Shop</a>
+          </div>
+
+          <!-- Cart Items (populated by cart.js) -->
+          <div class="cart-items" id="cartItems"></div>
+
+        </div>
+
+        <!-- Right: Order Summary -->
+        <aside class="cart-summary">
+          <h2 class="cart-summary-title">Order Summary</h2>
+
+          <div class="summary-rows">
+            <div class="summary-row">
+              <span class="summary-label">Subtotal</span>
+              <span class="summary-subtotal">&#8377;0</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Shipping</span>
+              <span class="summary-shipping">Free</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Discount</span>
+              <span class="summary-discount">&#8377;0</span>
+            </div>
+          </div>
+
+          <div class="summary-divider"></div>
+
+          <div class="summary-row summary-row--total">
+            <span class="summary-label">Total</span>
+            <span class="summary-total-value">&#8377;0</span>
+          </div>
+
+          <!-- Promo Code -->
+          <div class="cart-promo">
+            <label class="cart-promo-label" for="promoInput">Promo Code</label>
+            <div class="cart-promo-row">
+              <input
+                type="text"
+                id="promoInput"
+                class="cart-promo-input"
+                placeholder="Promo code"
+                autocomplete="off"
+              >
+              <button class="cart-promo-btn btn btn-outline">Apply</button>
+            </div>
+            <p class="cart-promo-message" id="promoMessage"></p>
+          </div>
+
+          <!-- Checkout Actions -->
+          <div class="cart-checkout-btn">
+            <a href="#" class="btn btn-primary btn-full">Proceed to Checkout</a>
+            <a href="shop.html" class="cart-continue-link">&#8592; Continue Shopping</a>
+          </div>
+
+          <!-- Trust Icons -->
+          <div class="cart-trust">
+            <div class="cart-trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+              <span>Secure Checkout</span>
+            </div>
+            <div class="cart-trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span>SSL Protected</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">VELRON</div>
+          <div class="footer-brand-tagline">Live The Vision</div>
+          <p class="footer-brand-desc">Premium men's fashion built on speed, style, and legacy.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop All</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Customer Care</div>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Policies</div>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 VELRON. All rights reserved.</p>
+        <div class="footer-payment">
+          <div class="payment-icon">VISA</div>
+          <div class="payment-icon">UPI</div>
+          <div class="payment-icon">COD</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/form-validation.js"></script>
+
+</body>
+</html>
